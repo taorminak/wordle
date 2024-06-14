@@ -19,7 +19,7 @@ import Title from './components/Title.vue'
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 10vh;
+  min-height: 10vh;
 }
 
 nav {
@@ -50,23 +50,16 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
+    text-align: center;
     font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
   }
 }
 </style>

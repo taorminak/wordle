@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import Keyboard from '../components/Keyboard.vue'
+</script>
 
 <template>
   <main>
-    <div>This is home page</div>
+    <Keyboard />
   </main>
 </template>

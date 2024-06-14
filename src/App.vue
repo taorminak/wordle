@@ -1,19 +1,16 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Title from './components/Title.vue';
-
+import Title from './components/Title.vue'
 </script>
 
 <template>
   <header>
-    
-      <Title />
+    <Title />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
   </header>
 
   <RouterView />

@@ -5,7 +5,7 @@
       For reading the rules, click <a href="#" @click.prevent="openModal">here</a>
     </div>
   </div>
-  <ModalWithRules v-if="isModalOpen" @close="closeModal" />
+  <ModalWithRules :show="isModalOpen" @close="closeModal" />
 </template>
 
 <script>
